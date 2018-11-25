@@ -249,7 +249,7 @@ module.exports = {
           // Unlike the application JS, we only compile the standard ES features.
           {
             test: /\.(js|mjs)$/,
-            exclude: /@babel(?:\/|\\{1,2})runtime/,
+            exclude: /@babel(?:\/|\\{1,2})runtime/,/\.sass$/,/\.scss$/,
             loader: require.resolve('babel-loader'),
             options: {
               babelrc: false,
